@@ -5,14 +5,9 @@ name: Meu Primeiro Action
 on:
   push:
     branches:
-      - main 
+      - main
     paths:
-      - 'Dockerfile' 
-
-env:
-  DOCKER_IMAGE_NAME: ghactions 
-  DOCKER_USERNAME: jhonatanpacheco 
-  TAG: latest
+      - "Dockerfile"
 
 # Definição dos jobs
 jobs:
