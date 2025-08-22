@@ -1,0 +1,14 @@
+C:\dev\repo\fiap\docker\bin\Debug\net9.0\docker.exe
+C:\dev\repo\fiap\docker\bin\Debug\net9.0\docker.deps.json
+C:\dev\repo\fiap\docker\bin\Debug\net9.0\docker.runtimeconfig.json
+C:\dev\repo\fiap\docker\bin\Debug\net9.0\docker.dll
+C:\dev\repo\fiap\docker\bin\Debug\net9.0\docker.pdb
+C:\dev\repo\fiap\docker\obj\Debug\net9.0\docker.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\repo\fiap\docker\obj\Debug\net9.0\docker.AssemblyInfoInputs.cache
+C:\dev\repo\fiap\docker\obj\Debug\net9.0\docker.AssemblyInfo.cs
+C:\dev\repo\fiap\docker\obj\Debug\net9.0\docker.csproj.CoreCompileInputs.cache
+C:\dev\repo\fiap\docker\obj\Debug\net9.0\docker.dll
+C:\dev\repo\fiap\docker\obj\Debug\net9.0\refint\docker.dll
+C:\dev\repo\fiap\docker\obj\Debug\net9.0\docker.pdb
+C:\dev\repo\fiap\docker\obj\Debug\net9.0\docker.genruntimeconfig.cache
+C:\dev\repo\fiap\docker\obj\Debug\net9.0\ref\docker.dll

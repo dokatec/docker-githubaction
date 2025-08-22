@@ -1,0 +1,42 @@
+# Nome que aparece na aba "Actions" do seu repositório
+name: Meu Primeiro Action
+
+# O evento que irá disparar este workflow
+on:
+  push:
+    branches:
+      - main # Dispara quando há um push para o branch 'main'
+    paths:
+      - 'Dockerfile' # Dispara quando há mudanças no arquivo 'Dockerfile'
+
+env:
+  DOCKER_IMAGE_NAME: ghactions # Altere para o nome da sua imagem no Docker Hub
+  DOCKER_USERNAME: jhonatanpacheco # Altere para seu usuário do Docker Hub
+  TAG: latest
+
+# Definição dos jobs
+jobs:
+  # O nome do nosso job: 'olamundo'
+  olamundo:
+    # O ambiente onde o job será executado. 'ubuntu-latest' é uma máquina virtual com Ubuntu
+    runs-on: ubuntu-latest
+
+    # As etapas (steps) do nosso job
+    steps:
+      # A primeira etapa é sempre fazer o checkout do seu código
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      # A segunda etapa executa um comando de shell
+      - name: Login no Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+
+      - name: Build e Push da imagem Docker
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ env.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.TAG }}
