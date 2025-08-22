@@ -5,13 +5,13 @@ name: Meu Primeiro Action
 on:
   push:
     branches:
-      - main # Dispara quando há um push para o branch 'main'
+      - main 
     paths:
-      - 'Dockerfile' # Dispara quando há mudanças no arquivo 'Dockerfile'
+      - 'Dockerfile' 
 
 env:
-  DOCKER_IMAGE_NAME: ghactions # Altere para o nome da sua imagem no Docker Hub
-  DOCKER_USERNAME: jhonatanpacheco # Altere para seu usuário do Docker Hub
+  DOCKER_IMAGE_NAME: ghactions 
+  DOCKER_USERNAME: jhonatanpacheco 
   TAG: latest
 
 # Definição dos jobs
